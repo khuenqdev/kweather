@@ -1,0 +1,23 @@
+<div class="container theme-showcase" role="main">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Weather information in {{information.location}}, {{information.country}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="weather-options">
+                <label>Units</label>&nbsp;
+                <button type="button" class="btn btn-xs btn-default" onclick="location.href='/?units=default'">Default</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-xs btn-primary" onclick="location.href='/?units=metric'">Metric</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-xs btn-success" onclick="location.href='/?units=imperial'">Imperial</button>
+            </div>
+            <div class="weather-information">
+                <img src="http://openweathermap.org/img/w/{{information.icon}}.png" width="64px" height="64px" alt="{{information.description}}" />&nbsp;
+                <span class="label label-warning">Temperature</span>&nbsp;{{information.temperature}}⁰{{information.temp_unit}}&nbsp;&nbsp;&nbsp;
+                <span class="label label-primary">Pressure</span>&nbsp;{{information.pressure}}hPa&nbsp;&nbsp;&nbsp;
+                <span class="label label-success">Humidity</span>&nbsp;{{information.humidity}}%&nbsp;&nbsp;&nbsp;
+                <span class="label label-info">Status</span>&nbsp;{{toUpperCase information.description}}&nbsp;&nbsp;&nbsp;
+                <span class="label label-default">Wind</span>&nbsp;{{information.wind}}{{information.wind_unit}}
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->

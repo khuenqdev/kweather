@@ -1,0 +1,37 @@
+{
+  "name": "kweather",
+  "version": "1.0.0",
+  "description": "A weather application developed using nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khuenqdev/kweather.git"
+  },
+  "keywords": [
+    "weather",
+    "nodejs",
+    "app",
+    "training"
+  ],
+  "author": "Nguyen Quang Khue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khuenqdev/kweather/issues"
+  },
+  "homepage": "https://github.com/khuenqdev/kweather#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
