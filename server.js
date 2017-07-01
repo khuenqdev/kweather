@@ -30,11 +30,13 @@ hbs.registerHelper('toUpperCase', (text) => {
 // Weather home page
 app.get('/', (req, res) => {
     var units = req.query['units'];
-    utils.getWeatherInformation(units, (information) => {
+    var location = {lat: req.query['lat'], lng: req.query['lng']};
+    utils.getWeatherInformation(location, units, (information) => {
         res.render('index.hbs', {
             pageTitle: 'KWeather',
             description: 'An application for getting current weather information',
             author: 'Khue Quang Nguyen',
+            year: new Date().getFullYear(),
             information: information
         });
     });

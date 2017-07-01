@@ -6,9 +6,9 @@
         <div class="panel-body">
             <div class="weather-options">
                 <label>Units</label>&nbsp;
-                <button type="button" class="btn btn-xs btn-default" onclick="location.href='/?units=default'">Default</button>&nbsp;&nbsp;&nbsp;
-                <button type="button" class="btn btn-xs btn-primary" onclick="location.href='/?units=metric'">Metric</button>&nbsp;&nbsp;&nbsp;
-                <button type="button" class="btn btn-xs btn-success" onclick="location.href='/?units=imperial'">Imperial</button>
+                <button type="button" class="btn btn-xs btn-default" onclick="changeWeatherUnits('default')">Default</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-xs btn-primary" onclick="changeWeatherUnits('metric')">Metric</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-xs btn-success" onclick="changeWeatherUnits('imperial')">Imperial</button>
             </div>
             <div class="weather-information">
                 <img src="http://openweathermap.org/img/w/{{information.icon}}.png" width="64px" height="64px" alt="{{information.description}}" />&nbsp;
